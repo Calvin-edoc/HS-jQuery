@@ -11,6 +11,7 @@ $(document).ready(function () {
 
     $('html').click(function(){
         $('.dropdown_open').hide();
+        $('.dropdown').removeClass('active');
     });
     // 下拉式選單 end
 
