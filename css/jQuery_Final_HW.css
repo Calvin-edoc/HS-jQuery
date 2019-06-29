@@ -1,0 +1,473 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*CSS reset end*/
+
+
+
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.wrap{
+	width: 1000px;	
+	margin: 0 auto;	
+}
+
+
+
+
+/*topbar begin*/
+
+
+
+.header{
+	margin-bottom: 5px;
+}
+.topbar{
+	background-color: #f6f6f6;	
+}
+
+.topbar ul{
+	float: right;
+	padding: 5px;
+}
+
+.topbar li{
+	float: left;
+	padding-right: 8px;
+	padding-left: 8px;
+}
+
+.topbar a{
+	text-decoration: none;
+}
+
+.topbar span, img{
+	float: left;
+}
+
+.topbar img{
+	padding-right: 3px;
+}
+
+.facebook {
+	border-right: 1px solid #cccccc;
+}
+
+.facebook span{
+	color: #4460a0;
+}
+
+.twitter span{
+	color: #00aaec;
+}
+
+
+.clearfix:after{
+	content:'';
+	display:table;
+	clear:both;
+}
+
+
+/*topbar end*/
+
+/*navbar begin*/
+
+.navbar{
+	padding-top: 5px;
+}
+
+.logo{
+	float: left;
+	padding-left: 20px;
+}
+
+.menu{
+	float: right;
+	padding: 10px;
+}
+
+.logo a{
+	background-image: url(../img/images/logo.png);	
+	width: 170px;
+	height: 36px;	
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.menu>li{
+	float: left;
+}
+
+.menu a{	
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+	color: #26d0a1;
+}
+
+.dropdown:hover, .dropdown.active{	
+	border-bottom: 5px solid #26d0a1;
+}
+
+
+
+.menu{
+	position: relative;
+}
+.menu ul{
+	display: none;
+	position: absolute;
+	z-index: 10;
+	top: 41px;
+}
+
+/* .menu>li:hover ul{
+	display: block;
+} */
+
+.dropdown_open a{
+	display: block;
+	background-color: white ;
+	color: #26d0a1;
+	border: 1px solid #26d0a1;
+
+}
+
+.dropdown_open a:hover{
+	display: block;
+	background-color:  #26d0a1;
+	color: white;
+
+}
+
+
+
+
+
+/*navbar end*/
+
+/*swiper begin*/
+
+
+
+
+.swiper-container {
+	width: 1000px;
+	height: 560px;
+	margin-bottom: 50px;
+}
+
+
+
+
+
+/*swiper end*/
+
+/*product begin*/
+
+
+
+
+.product{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 50px;
+}
+
+.product>li{
+	display: inline-block;
+	margin-right: 10px;
+	margin-left: 10px;	
+	width: 300px;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+
+
+.product .Html{
+	float: left;
+}
+
+.product .RWD{
+	float: left;
+}
+
+.product .jQuery {
+	float: right;
+}
+
+
+.product h3 {
+	padding-top: 140px;
+	margin-bottom: 5px;
+	color:#333333;	
+	text-align: center;
+	line-height: 30px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.product p {	
+	text-align: justify;
+	line-height: 20px;
+	font-size: 14px;
+	color:#333333;	
+}
+
+.product>li:hover{
+	box-shadow: 0px 5px 10px black;
+}
+
+.jQuery ul{
+	line-height: 20px;
+	font-size: 14px;
+	color:#333333;
+	list-style-type: disc;
+	list-style-position: inside;
+	margin-left: 5px;
+}
+
+
+	/* 調整燈箱圖片位置開始 */
+.Html, .RWD, .jQuery{
+	position: relative;
+}
+
+.Html img{
+	position: absolute;
+	left: 90px;
+}
+
+.RWD img{
+	position: absolute;
+	left: 40px;
+	top: 40px;
+}
+
+.jQuery img{
+	position: absolute;
+	left: 90px;
+}
+	/* 調整燈箱圖片位置結束 */
+
+/*product end*/
+
+/*difference begin*/
+
+
+
+.difference{
+	width: 800px;
+	margin: 0 auto 50px auto;
+}
+
+.difference h2{
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	color: #333333;
+	font-weight: bold;
+}
+
+.difference_table th, .difference_table td{
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	width: 200px;	
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+
+}
+
+.difference_table th{
+	font-weight: bold;
+}
+
+.firstLine{
+	background-color: #f7f7f7;
+}
+
+.difference_table tr{
+	margin-bottom: 10px;
+}
+
+.difference_table span{
+	color: #00a67d;
+}
+
+
+
+/*difference end*/
+
+/*form begin*/
+
+
+.form{
+	background-image: linear-gradient(to bottom,#00644b,#009871);
+	margin-bottom: 20px;
+	padding: 40px;
+}
+
+.form p{
+	color: white;
+	text-align: center;
+	font-size: 24px;
+	line-height: 30px;
+	
+}
+
+.form_textarea{
+	float: left;
+
+	padding-top: 30px;
+}
+
+.form_input{
+	float: right;
+	padding-top: 30px;	
+}
+
+.form_input label,input{
+	float: left;
+}
+
+.form_input label{
+	color: white;
+	font-size: 14px;
+}
+
+.form_input_fix input{
+	width: 400px;
+	height: 27px;
+	margin-bottom: 15px;
+}
+
+.form_input_fix label{
+	margin-bottom: 5px;
+}
+
+.form textarea, input{
+	border-radius: 5px;
+}
+
+.form_input_btn {
+	float: right;
+	width: 70px;
+	height: 40px;
+	background-color: #00cc99;
+	border: 1px solid #00cc99;
+	cursor: pointer; 
+	color: white;	
+}
+
+.form_input_btn:hover{
+	background-image:linear-gradient(to right bottom,#00cc99,black);
+	border: 1px solid #00654c;
+	cursor: pointer; 
+	color: white;		
+}
+
+
+
+/*form end*/
+
+/*footer begin*/
+
+
+
+.footer{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 100px;
+}
+.logo_footer{
+	float: left;
+	background-image: url(../img/images/logo_footer.png);
+	width: 170px;
+	height: 36px;
+			
+}
+
+.contact p{
+	padding-top: 0px;	
+	float: right;
+	line-height: 1.5;
+}
+
+.contact span{
+	color: #e12d80;
+}
+
+
+
+/*footer end*/
+
+/*back begin*/
+
+
+
+.back{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+}
+
+/*back end*/
